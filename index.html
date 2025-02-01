@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Shopper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Shopper</h1>
+    </header>
+    <main>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="category" onclick="loadProducts('fruits')">Fruits</div>
+            <div class="category" onclick="loadProducts('vegetables')">Vegetables</div>
+            <div class="category" onclick="loadProducts('dairy')">Dairy Products</div>
+            <div class="category" onclick="loadProducts('grains')">Grains & Staples</div>
+            <div class="category" onclick="loadProducts('proteins')">Proteins</div>
+            <div class="category" onclick="loadProducts('snacks')">Snacks & Beverages</div>
+            <div class="category" onclick="loadProducts('spices')">Spices & Condiments</div>
+            <div class="category" onclick="loadProducts('frozen')">Frozen & Ready-to-Eat</div>
+            <div class="category" onclick="loadProducts('household')">Household Essentials</div>
+            <div class="category" onclick="loadProducts('medicines')">Medicines</div>
+            <div class="category" onclick="loadProducts('clothing')">Clothing</div>
+            <div class="category" onclick="loadProducts('cosmetics')">Cosmetics</div>
+        </section>
+        <section id="products" style="display: none;">
+            <h2>Products</h2>
+            <div id="product-list"></div>
+        </section>
+        <section id="shops" style="display: none;">
+            <h2>Shops</h2>
+            <div id="shop-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
